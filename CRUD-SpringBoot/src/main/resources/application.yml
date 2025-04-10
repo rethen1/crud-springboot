@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DATABASE_HOST:localhost}:${DATABASE_PORT:3308}/${DATABASE_NAME:bd-crud}
+    username: ${DATABASE_USER:root}
+    password: ${DATABASE_PASSWORD:''}
+  application:
+    name: app_est
+  jpa:
+    properties:
+      hibernate:
+        dialect: ${DB_PLATFORM}
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
