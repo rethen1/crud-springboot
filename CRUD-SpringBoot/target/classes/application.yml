@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://${DATABASE_HOST:localhost}:${DATABASE_PORT:3308}/${DATABASE_NAME:bd-crud}
+    url: jdbc:mysql://${DATABASE_HOST:localhost}:${DATABASE_PORT:3308}/${DATABASE_NAME:bd_crud}
     username: ${DATABASE_USER:root}
     password: ${DATABASE_PASSWORD:''}
   application:
