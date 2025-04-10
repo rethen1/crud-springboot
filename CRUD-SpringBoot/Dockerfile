@@ -7,4 +7,4 @@ COPY --from=build /target/*.jar com.app.crud-1.0.jar
 
 ARG JAR_FILE=target/CRUD-SpringBoot-1.0.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+ENTRYPOINT ["java", "-jar", "com.app.crud-1.0.jar"]
