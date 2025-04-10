@@ -3,7 +3,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17-alpine
-COPY --from=build /target/*.jar demo.jar
+COPY --from=build /target/*.jar com.app.crud-1.0.jar
 
 ARG JAR_FILE=target/CRUD-SpringBoot-1.0.jar
 EXPOSE 8080
