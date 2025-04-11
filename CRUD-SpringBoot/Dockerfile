@@ -5,6 +5,6 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-alpine
 COPY --from=build /target/*.jar com.app.crud-1.0.jar
 
-ARG JAR_FILE=/CRUD-SpringBoot/Dockerfile
+ARG JAR_FILE=CRUD-SpringBoot/Dockerfile
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "com.app.crud-1.0.jar"]
